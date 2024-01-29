@@ -12,9 +12,10 @@ brew 'pkg-config' # https://github.com/driesvints/dotfiles/issues/20
 # Development
 brew 'imagemagick'
 brew 'mysql'
-brew 'sqlite'
 brew 'node'
 brew 'redis'
+brew "romkatv/powerlevel10k/powerlevel10k"
+brew 'sqlite'
 
 # Apps
 cask '1password'
