@@ -21,7 +21,7 @@ colorscheme onedark
 nnoremap <F4> :NERDTreeToggle<CR>
 let NERDTreeShowLineNumbers=1
 autocmd FileType nerdtree setlocal relativenumber
-autocmd VimResized * wincmd =
+autocmd VimResized * wincmd =`
 
 " Terraform Auto-Format
 let g:terraform_fmt_on_save=1
