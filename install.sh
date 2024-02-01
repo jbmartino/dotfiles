@@ -15,3 +15,6 @@ brew update
 # Install dependencies with bundle (Brewfile)
 brew tap homebrew/bundle
 brew bundle
+
+# Set macOS preferences
+source ./.macos
