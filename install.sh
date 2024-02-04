@@ -10,6 +10,10 @@ if test ! $(which brew); then
   ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 fi
 
+# Remove existing .zshrc & symlink .zshrc from .dotfiles
+rm -rf $HOME/.zshrc
+ln -s .zshrc $HOME/.zshrc
+
 brew update
 
 # Install dependencies with bundle (Brewfile)
