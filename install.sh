@@ -10,9 +10,13 @@ if test ! $(which brew); then
   ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 fi
 
-# Remove existing .zshrc & symlink .zshrc from .dotfiles
+# Remove existing .zshrc & symlink .zshrc from dotfiles
 rm -rf $HOME/.zshrc
 ln -s .zshrc $HOME/.zshrc
+
+# Remove existing .vimrc & symlink .vimrc from dotfiles
+rm -rf $HOME/.vimrc
+ln -s .vimrc $HOME/.vimrc
 
 brew update
 
