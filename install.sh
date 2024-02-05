@@ -27,5 +27,8 @@ brew bundle
 # Setup Project Dirs
 mkdir $HOME/repos
 
+# Clone repos
+./clone.sh
+
 # Set macOS preferences
 source ./.macos
