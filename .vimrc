@@ -13,6 +13,14 @@ Plug 'junegunn/fzf.vim'
 Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
 call plug#end()
 
+" Leader/Keybindings
+let mapleader = ','
+" Quickly copy to system clipboard
+nnoremap <Leader>y "+
+" NERDTree Window navigation Left/Right
+nnoremap <Leader><C-W>h
+nnoremap <Leader><C-W>l
+
 set relativenumber
 
 set clipboard=unnamed
