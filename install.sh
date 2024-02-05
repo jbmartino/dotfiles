@@ -24,5 +24,8 @@ brew update
 brew tap homebrew/bundle
 brew bundle
 
+# Setup Project Dirs
+mkdir $HOME/repos
+
 # Set macOS preferences
 source ./.macos
