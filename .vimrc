@@ -16,10 +16,10 @@ call plug#end()
 " Leader/Keybindings
 let mapleader = ','
 " Quickly copy to system clipboard
-nnoremap <Leader>y "+
+nnoremap <Leader>y "+yy
 " NERDTree Window navigation Left/Right
-nnoremap <Leader><C-W>h
-nnoremap <Leader><C-W>l
+nnoremap <Leader><C-W>h <C-W>h
+nnoremap <Leader><C-W>l <C-W>l
 
 set relativenumber
 
