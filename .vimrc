@@ -18,8 +18,8 @@ let mapleader = ','
 " Quickly copy to system clipboard
 nnoremap <Leader>y "+yy
 " NERDTree Window navigation Left/Right
-nnoremap <Leader><C-W>h <C-W>h
-nnoremap <Leader><C-W>l <C-W>l
+nnoremap <Leader>h <C-W>h
+nnoremap <Leader>l <C-W>l
 
 set relativenumber
 
