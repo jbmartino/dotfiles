@@ -106,9 +106,10 @@ source $ZSH/oh-my-zsh.sh
 alias tf="terraform"
 alias python=/usr/bin/python3
 alias conv='ruby ~/scripts/heic_to_png.rb'
+alias ls='ls -1'
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 export PATH="/usr/local/bin:$PATH"
-export PATH="$PATH:$HOME/.rvm/bin"export PATH="$PATH:$HOME/.rvm/bin"
+export PATH="$PATH:$HOME/.rvm/bin"
