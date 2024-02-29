@@ -104,6 +104,7 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias tf="terraform"
+alias gcm='git commit -m'
 alias python=/usr/bin/python3
 alias conv='ruby ~/scripts/heic_to_png.rb'
 alias ls='ls -1'
