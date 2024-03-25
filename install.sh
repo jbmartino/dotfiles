@@ -18,11 +18,19 @@ ln -s .zshrc $HOME/.zshrc
 rm -rf $HOME/.vimrc
 ln -s .vimrc $HOME/.vimrc
 
+# Remove existing init.vim & symlink init.vim from dotfiles
+rm -rm $HOME/.config/nvim/init.vim
+ls -s init.vim $HOME/.config/nvim/init.vim
+
 brew update
 
 # Install dependencies with bundle (Brewfile)
 brew tap homebrew/bundle
 brew bundle
+
+# Configure Vim-plug for nvim
+curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
 # Setup Project Dirs
 mkdir $HOME/repos
