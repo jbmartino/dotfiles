@@ -12,6 +12,7 @@ brew 'pkg-config' # https://github.com/driesvints/dotfiles/issues/20
 # Development
 brew 'imagemagick'
 brew 'mysql'
+brew 'neovim'
 brew 'node'
 brew 'redis'
 brew "romkatv/powerlevel10k/powerlevel10k"
