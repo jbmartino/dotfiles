@@ -1,4 +1,4 @@
-call plug#begin()
+call plug#begin('~/.config/nvim/plugged')
 Plug 'tpope/vim-sensible'
 Plug 'hashivim/vim-terraform'
 Plug 'airblade/vim-gitgutter'
