@@ -10,9 +10,9 @@ Plug 'tpope/vim-ragtag'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'folke/tokyonight.nvim'
-
+Plug 'kyazdani42/nvim-tree.lua'
 " On-demand loading
-Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
+"Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
 call plug#end()
 
 " Leader/Keybindings
@@ -21,10 +21,6 @@ let mapleader = ','
 nnoremap <Leader>y "+yy
 " Paste externally selected text
 nnoremap <Leader>p "*p
-
-" NERDTree Window navigation Left/Right
-nnoremap <Leader>h <C-W>h
-nnoremap <Leader>l <C-W>l
 
 nnoremap <Leader>g :GFiles<CR>
 
@@ -39,11 +35,28 @@ syntax on
 " colorscheme onedark
 colorscheme tokyonight-moon
 
+" NERDTree Window navigation Left/Right
+"nnoremap <Leader>h <C-W>h
+"nnoremap <Leader>l <C-W>l
+" nvim-tree window navigation
+nnoremap <Leader>h :wincmd h<CR>
+nnoremap <Leader>l :wincmd l<CR>
+nnoremap <F4> :NvimTreeToggle<CR>
+
+lua << EOF
+require'nvim-tree'.setup {
+	view = {
+		number = true,
+		relativenumber = true,
+		},
+	}
+EOF
+
 " NERDTree settings
-nnoremap <F4> :NERDTreeToggle<CR>
-let NERDTreeShowLineNumbers=1
-autocmd FileType nerdtree setlocal relativenumber
-autocmd VimResized * wincmd =
+"nnoremap <F4> :NERDTreeToggle<CR>
+"let NERDTreeShowLineNumbers=1
+"autocmd FileType nerdtree setlocal relativenumber
+"autocmd VimResized * wincmd =
 
 " Terraform Auto-Format
 let g:terraform_fmt_on_save=1
