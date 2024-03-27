@@ -1,7 +1,8 @@
 call plug#begin('~/.config/nvim/plugged')
 Plug 'tpope/vim-sensible'
 Plug 'hashivim/vim-terraform'
-Plug 'airblade/vim-gitgutter'
+Plug 'mhinz/vim-signify'
+"Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-fugitive'
 Plug 'vim-ruby/vim-ruby'
 Plug 'joshdick/onedark.vim'
