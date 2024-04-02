@@ -41,5 +41,3 @@ mkdir $HOME/repos
 # Set macOS preferences
 source ./.macos
 
-# Set zshrc
-source ~/.zshrc
