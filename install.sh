@@ -19,8 +19,8 @@ rm -rf $HOME/.vimrc
 ln -s .vimrc $HOME/.vimrc
 
 # Remove existing init.vim & symlink init.vim from dotfiles
-rm -rm $HOME/.config/nvim/init.vim
-ls -s init.vim $HOME/.config/nvim/init.vim
+rm -rf $HOME/.config/nvim/init.vim
+ln -s init.vim $HOME/.config/nvim/init.vim
 
 brew update
 
@@ -40,3 +40,6 @@ mkdir $HOME/repos
 
 # Set macOS preferences
 source ./.macos
+
+# Set zshrc
+source ~/.zshrc
