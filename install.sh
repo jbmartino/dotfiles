@@ -7,7 +7,7 @@ fi
 
 # Check for Homebrew and install if we don't have it
 if test ! $(which brew); then
-  ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+  /bin/bash -c "$(curl -fsSL -n https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 fi
 
 # Remove existing .zshrc & symlink .zshrc from dotfiles
