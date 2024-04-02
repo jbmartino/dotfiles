@@ -43,9 +43,13 @@ ln -s $HOME/dotfiles/.vimrc $HOME/.vimrc
 rm -rf $HOME/.config/nvim/init.vim
 ln -s $HOME/dotfiles/init.vim $HOME/.config/nvim/init.vim
 
-# Configure Vim-plug for nvim
+# Configure Vim-plug for vim
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+
+# Configure Vim-plug for nvim
+sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
+       https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
 
 # Setup Project Dirs
 mkdir $HOME/repos
