@@ -12,15 +12,16 @@ fi
 
 # Remove existing .zshrc & symlink .zshrc from dotfiles
 rm -rf $HOME/.zshrc
-ln -s .zshrc $HOME/.zshrc
+ln -s $HOME/dotfiles/.zshrc $HOME/.zshrc
 
 # Remove existing .vimrc & symlink .vimrc from dotfiles
 rm -rf $HOME/.vimrc
-ln -s .vimrc $HOME/.vimrc
+ln -s $HOME/dotfiles/.vimrc $HOME/.vimrc
 
 # Remove existing init.vim & symlink init.vim from dotfiles
+[ -d $HOME/.config/nvim ] || mkdir -p $HOME/.config/nvim
 rm -rf $HOME/.config/nvim/init.vim
-ln -s init.vim $HOME/.config/nvim/init.vim
+ln -s $HOME/dotfiles/init.vim $HOME/.config/nvim/init.vim
 
 brew update
 
