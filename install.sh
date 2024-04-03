@@ -54,9 +54,6 @@ sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.
 # Setup Project Dirs
 mkdir $HOME/repos
 
-# Clone repos
-./clone.sh
-
 # Set macOS preferences
 source ./.macos
 
