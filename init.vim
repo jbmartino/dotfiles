@@ -11,6 +11,7 @@ Plug 'tpope/vim-ragtag'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'folke/tokyonight.nvim'
+Plug 'neovim/nvim-lspconfig'
 " On-demand loading
 Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
 call plug#end()
@@ -29,11 +30,11 @@ let g:airline_section_c = '%<%F%m %#__accent_red#%{airline#util#wrap(airline#par
 
 set number
 set relativenumber
-
+set mouse=a
 set clipboard=unnamed
 syntax on
 " colorscheme onedark
-colorscheme tokyonight-moon
+colorscheme tokyonight-storm
 
 " NERDTree settings
 nnoremap <F4> :NERDTreeToggle<CR>
@@ -47,3 +48,8 @@ nnoremap <Leader>l <C-W>l
 " Terraform Auto-Format
 let g:terraform_fmt_on_save=1
 autocmd BufWritePre *.tf :TerraformFmt
+
+" LSP Config
+lua << EOF
+require'lspconfig'.solargraph.setup {}
+EOF
