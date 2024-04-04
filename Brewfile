@@ -14,6 +14,7 @@ brew 'imagemagick'
 brew 'mysql'
 brew 'neovim'
 brew 'node'
+brew 'rbenv'
 brew 'redis'
 brew "romkatv/powerlevel10k/powerlevel10k"
 brew 'sqlite'

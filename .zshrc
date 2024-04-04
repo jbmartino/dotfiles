@@ -115,3 +115,4 @@ alias python=/usr/bin/python3
 
 export PATH="/usr/local/bin:$PATH"
 export PATH="$PATH:$HOME/.rvm/bin"
+eval "$(rbenv init -)"
