@@ -8,6 +8,8 @@ brew 'git'
 brew 'grep'
 brew 'jq'
 brew 'pkg-config' # https://github.com/driesvints/dotfiles/issues/20
+tap 'hashicorp/tap'
+brew 'hashicorp/tap/terraform'
 
 # Development
 brew 'imagemagick'
