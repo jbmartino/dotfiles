@@ -44,7 +44,6 @@ autocmd VimResized * wincmd =
 nnoremap <Leader>h <C-W>h
 nnoremap <Leader>l <C-W>l
 
-
 " Terraform Auto-Format
 let g:terraform_fmt_on_save=1
 autocmd BufWritePre *.tf :TerraformFmt
@@ -53,3 +52,10 @@ autocmd BufWritePre *.tf :TerraformFmt
 lua << EOF
 require'lspconfig'.solargraph.setup {}
 EOF
+
+" Auto-complete pairs
+inoremap " ""<Left>
+inoremap ' ''<Left>
+inoremap ( ()<Left>
+inoremap { {}<Left>
+inoremap [ []<Left>
