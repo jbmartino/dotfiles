@@ -74,7 +74,7 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git brew terraform zsh-autosuggestions fast-syntax-highlighting ruby rails)
+plugins=(terraform zsh-autosuggestions fast-syntax-highlighting ruby rails)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -103,12 +103,17 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias tf="terraform"
-alias gcm='git commit -m'
 alias python=/usr/bin/python3
 alias conv='ruby ~/scripts/heic_to_png.rb'
 alias ls='ls -1'
-alias python=/usr/bin/python3
+alias cwd='pwd | pbcopy'  # For macOS
+alias g=git
+alias ga='git add'
+alias gd='git diff'
+alias gbl='git blame -w'
+alias gcb='git checkout -b'
+alias gst='git status'
+# alias pwdc='pwd | xclip -selection clipboard' uncomment for linux
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/dotfiles/.p10k.zsh ]] || source ~/dotfiles/.p10k.zsh
