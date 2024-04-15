@@ -112,7 +112,12 @@ alias ga='git add'
 alias gd='git diff'
 alias gbl='git blame -w'
 alias gcb='git checkout -b'
-alias gcm='git add . && git commit -m "$(echo Enter commit message: && read -r msg && echo $msg)"'
+gcm(){
+    echo "Enter commit message: "
+    read -r msg
+    git commit -m "$msg"
+}
+alias gcm=gcm
 alias gst='git status'
 # alias pwdc='pwd | xclip -selection clipboard' uncomment for linux
 
