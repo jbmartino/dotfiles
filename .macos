@@ -16,3 +16,6 @@ defaults write com.googlecode.iterm2.plist PrefsCustomFolder -string "~/dotfiles
 defaults write com.googlecode.iterm2.plist LoadPrefsFromCustomFolder -bool true
 # Show hidden files by default
 defaults write com.apple.finder AppleShowAllFiles YES
+# Show home/library directory in finder
+chflags nohidden $HOME
+chflags nohidden $HOME/Library
