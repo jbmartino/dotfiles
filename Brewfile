@@ -18,7 +18,10 @@ brew 'neovim'
 brew 'node'
 brew 'rbenv'
 brew 'redis'
-brew "romkatv/powerlevel10k/powerlevel10k"
+#brew "romkatv/powerlevel10k/powerlevel10k"
+#tap "romkatv/powerlevel10k"
+#brew "romkatv/powerlevel10k/powerlevel10k"
+brew "powerlevel10k"
 brew 'sqlite'
 
 # Apps

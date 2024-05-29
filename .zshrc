@@ -124,6 +124,7 @@ alias gst='git status'
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/dotfiles/.p10k.zsh ]] || source ~/dotfiles/.p10k.zsh
 
-export PATH="/usr/local/bin:$PATH"
-export PATH="$PATH:$HOME/.rvm/bin"
+#export PATH="/usr/local/bin:$PATH"
+#export PATH="$PATH:$HOME/.rvm/bin"
+export PATH="/opt/homebrew/bin:$PATH" # for m1 macs
 eval "$(rbenv init -)"

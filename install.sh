@@ -8,7 +8,10 @@ fi
 # Check for Homebrew and install if we don't have it
 if test ! $(which brew); then
   /bin/bash -c "$(curl -fsSL -n https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+  eval "$(/opt/homebrew/bin/brew shellenv)"
 fi
+
+eval "$(/opt/homebrew/bin/brew shellenv)"
 
 brew update
 
@@ -50,6 +53,10 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
 # Configure Vim-plug for nvim
 sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
        https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+
+# Install vim/neovim plugins
+vim +PlugInstall +qall
+nvim +PlugInstall +qall
 
 # Setup Project Dirs
 mkdir $HOME/repos
