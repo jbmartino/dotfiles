@@ -39,6 +39,7 @@ colorscheme tokyonight-storm
 " NERDTree settings
 nnoremap <F4> :NERDTreeToggle<CR>
 let NERDTreeShowLineNumbers=1
+let NERDTreeShowHidden=1
 autocmd FileType nerdtree setlocal relativenumber
 autocmd VimResized * wincmd =
 nnoremap <Leader>h <C-W>h
