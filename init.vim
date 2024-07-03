@@ -10,7 +10,7 @@ Plug 'vim-airline/vim-airline'
 Plug 'tpope/vim-ragtag'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
-Plug 'folke/tokyonight.nvim'
+"Plug 'folke/tokyonight.nvim'
 Plug 'neovim/nvim-lspconfig'
 " On-demand loading
 Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
@@ -33,8 +33,8 @@ set relativenumber
 set mouse=a
 set clipboard=unnamed
 syntax on
-" colorscheme onedark
-colorscheme tokyonight-storm
+colorscheme onedark
+"colorscheme tokyonight-storm
 
 " NERDTree settings
 nnoremap <F4> :NERDTreeToggle<CR>
