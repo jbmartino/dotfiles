@@ -74,7 +74,7 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(terraform zsh-autosuggestions fast-syntax-highlighting ruby rails)
+plugins=(zsh-autosuggestions fast-syntax-highlighting ruby rails)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -107,6 +107,13 @@ alias python=/usr/bin/python3
 alias conv='ruby ~/scripts/heic_to_png.rb'
 alias ls='ls -1'
 alias cwd='pwd | pbcopy'  # For macOS
+alias terraform=tofu
+alias tf=tofu
+alias tfa='tofu apply'
+alias tfi='tofu init'
+alias tfp='tofu plan'
+alias tfa='tofu apply'
+alias tfsh='tofu show'
 alias g=git
 alias ga='git add'
 alias gd='git diff'
