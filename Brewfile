@@ -2,16 +2,13 @@
 tap 'homebrew/bundle'
 tap 'nicoverbruggen/homebrew-cask'
 
-# Binaries
 brew 'awscli'
+brew 'helm'
 brew 'git'
 brew 'grep'
 brew 'jq'
 brew 'pkg-config' # https://github.com/driesvints/dotfiles/issues/20
-tap 'hashicorp/tap'
-brew 'hashicorp/tap/terraform'
-
-# Development
+brew 'opentofu'
 brew 'imagemagick'
 brew 'mysql'
 brew 'neovim'
