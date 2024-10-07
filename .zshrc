@@ -128,7 +128,7 @@ alias tfa='tofu apply'
 alias tfsh='tofu show'
 alias g=git
 alias ga='git add'
-alias gd='git diff'
+alias gd='git --no-pager diff'
 alias gbl='git blame -w'
 alias gcb='git checkout -b'
 gcm(){
