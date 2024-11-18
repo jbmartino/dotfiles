@@ -5,6 +5,7 @@ tap 'nicoverbruggen/homebrew-cask'
 brew 'awscli'
 brew 'helm'
 brew 'git'
+brew 'gh'
 brew 'grep'
 brew 'jq'
 brew 'pkg-config' # https://github.com/driesvints/dotfiles/issues/20
