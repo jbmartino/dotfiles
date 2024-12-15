@@ -109,7 +109,7 @@ alias ls='ls -1'
 alias cwd='pwd | pbcopy'  # For macOS
 alias g=git
 alias ga='git add'
-alias gd='git diff'
+alias gd='git --no-pager diff'
 alias gbl='git blame -w'
 alias gcb='git checkout -b'
 gcm(){
@@ -118,6 +118,7 @@ gcm(){
     git commit -m "$msg"
 }
 alias gcm=gcm
+alias gp='git push'
 alias gst='git status'
 # alias pwdc='pwd | xclip -selection clipboard' uncomment for linux
 
@@ -128,3 +129,6 @@ alias gst='git status'
 #export PATH="$PATH:$HOME/.rvm/bin"
 export PATH="/opt/homebrew/bin:$PATH" # for m1 macs
 eval "$(rbenv init -)"
+
+# Added by Windsurf
+export PATH="/Users/josh/.codeium/windsurf/bin:$PATH"
