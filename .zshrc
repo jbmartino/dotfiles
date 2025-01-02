@@ -121,7 +121,6 @@ alias kctx='kubectl config current-context'
 alias kgctx='kubectl get-contexts'
 alias terraform=tofu
 alias tf=tofu
-alias tfa='tofu apply'
 alias tfi='tofu init'
 alias tfp='tofu plan'
 alias tfa='tofu apply'
