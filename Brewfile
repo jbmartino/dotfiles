@@ -12,6 +12,7 @@ brew 'pkg-config' # https://github.com/driesvints/dotfiles/issues/20
 brew 'opentofu'
 brew 'imagemagick'
 brew 'mysql'
+brew 'postgresql'
 brew 'neovim'
 brew 'node'
 brew 'rbenv'
