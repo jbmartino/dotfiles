@@ -150,3 +150,4 @@ eval "$(rbenv init -)"
 
 # Added by Windsurf
 export PATH="/Users/josh/.codeium/windsurf/bin:$PATH"
+export PATH="/opt/homebrew/opt/postgresql@17/bin:$PATH"
