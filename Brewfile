@@ -22,6 +22,9 @@ brew 'redis'
 #brew "romkatv/powerlevel10k/powerlevel10k"
 brew "powerlevel10k"
 brew 'sqlite'
+brew 'kubectl'
+brew 'k9s'
+brew 'kustomize'
 
 # Apps
 cask '1password'
